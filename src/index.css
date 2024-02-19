@@ -25,3 +25,7 @@
 .MuiFormControl-root.css-1908w6b-MuiFormControl-root {
   margin: 0px;
 }
+
+.css-c11evn.Mui-focused {
+  color: #000 !important;
+}
