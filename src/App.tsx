@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 import { FormControl, InputLabel, MenuItem, Select, ThemeProvider, createTheme } from '@mui/material';
+import img2 from './assets/bg-btn.png';
 
 const Container = styled.div`
     padding: 20px;
@@ -12,17 +13,14 @@ const Container = styled.div`
 `;
 
 const Content = styled.div`
-    margin-top: 0;
+   margin-top: 0;
     padding: 20px;
     border-color: #ffd207;
     background-color: transparent;
-    border-radius: 10px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-    width: 100%;
-    max-width: 600px;
 `;
 
 const StyledText = styled.p`
@@ -42,25 +40,19 @@ const Input = styled.input`
     border-radius: 10px;
     margin-bottom: 10px;
     padding: 10px;
-    width: 280px;
 `;
 
 const Button = styled.button`
     padding: 20px 30px;
-    width: 280px;
     border: none;
     cursor: pointer;
     transition: all 0.3s;
     font-weight: bold;
     color: #000;
-    background: url(/src/assets/bg-btn.png) center center no-repeat;
+    background: url(${img2}) center center no-repeat;
     background-size: cover;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     height: 100px;
-
-    &:hover {
-      background-color: #e8b556;
-    }
 `;
 
 const theme = createTheme({
@@ -146,7 +138,7 @@ const Calculator = () => {
 
                 <StyledText>Milésimos</StyledText>
              
-            <FormControl sx={{ m: 1, minWidth: 120, width: 280 }} color='success'>
+            <FormControl sx={{ m: 1, minWidth: 120 }} color='success'>
                 <InputLabel
                     htmlFor="demo-simple-select-helper"
                     sx={{
@@ -168,7 +160,7 @@ const Calculator = () => {
                 </Select>
             </FormControl>
                 <StyledText>Mão de obra</StyledText>
-                <FormControl sx={{ m: 1, minWidth: 120, width: 280 }} color='success'>
+                <FormControl sx={{ m: 1, minWidth: 120 }} color='success'>
                 <InputLabel
                     htmlFor="demo-simple-select-helper"
                     sx={{
@@ -227,7 +219,7 @@ const Calculator = () => {
 
                 <StyledText>Marcap</StyledText>
 
-                <FormControl sx={{ m: 1, minWidth: 120, width: 280, backgroundColor: '#bb9469' }} color='success'>
+                <FormControl sx={{ m: 1, minWidth: 120, backgroundColor: '#bb9469' }} color='success'>
     <InputLabel
         htmlFor="demo-simple-select-helper"
         sx={{
