@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#demo-simple-select-helper {
+  background-color: #e8b556;
+  border-radius: 10px;
+}
+
+.css-1d6x6t3-MuiFormLabel-root-MuiInputLabel-root {
+  color: #000 !important;
+}
+
+.css-1rtl1s0-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: #000 !important;
+}
+
+.css-jakfl0-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: #000 !important;
+}
+
+.MuiFormControl-root.css-1908w6b-MuiFormControl-root {
+  margin: 0;
+}
